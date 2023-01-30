@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         avenir: ["Avenir"],
       },
+      colors: {
+        primary: "#ea580c",
+      },
     },
   },
   plugins: [],
