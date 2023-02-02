@@ -16,3 +16,7 @@
   box-sizing: border-box;
   font-family: Avenir;
 }
+
+button {
+  @apply border-2 border-primary text-primary;
+}
