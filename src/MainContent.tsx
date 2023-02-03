@@ -32,21 +32,26 @@ const MainContent = () => {
 
   const totalCompletedTopics = topics.filter((topic) => topic.isActive).length;
 
+  // CHANGE THE MARGIN ON the main element
   return (
     <main className="bg-white m-4 p-8 rounded-md">
-      <section className="grid grid-cols-2 grid-rows-2 items-center">
+      <section className="grid grid-cols-3 grid-rows-2 items-center">
         <img
           src="/assets/images/beginner-php-fundamentals.png"
           className="h-12"
         />
-        <h1 className="text-sm">Web Development Bootcamp Trial</h1>
-        <button className="col-start-2 bg-primary text-white text-sm rounded-lg py-2">
-          Continue your trial
+        <h1 className="col-span-2 text-xl">Web Development Bootcamp Trial</h1>
+        <button className="col-start-2 col-span-2 bg-primary text-white text-sm rounded-lg px-4 py-2 flex justify-around">
+          <span>Continue your trial</span>
+          <span>&gt;</span>
         </button>
       </section>
       <section className="border-t mt-8 pt-8">
-        <h2 className="text-center mb-6">
-          Your progress ({totalCompletedTopics}/4) complete
+        <h2 className="text-center mb-6 text-base">
+          Your progress{" "}
+          <span className="font-medium">
+            ({totalCompletedTopics}/4 complete)
+          </span>
         </h2>
         <div className="flex flex-col space-y-3">
           {topics.map((topic) => (

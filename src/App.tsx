@@ -6,7 +6,7 @@ import MainContent from "./MainContent";
 
 function App() {
   return (
-    <div className="bg-slate-100 h-full">
+    <div className="bg-slate-50 h-full relative">
       <Header />
       <MainContent />
       <Bootcamps />

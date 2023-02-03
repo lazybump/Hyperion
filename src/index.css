@@ -2,12 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Avenir";
-  src: url("../public/assets/fonts/Avenir-Light.ttf");
-  src: url("../public/assets/fonts/Avenir-Medium.ttf");
-  src: url("../public/assets/fonts/Avenir-Heavy.ttf");
-  src: url("../public/assets/fonts/avenir-next-bold.ttf");
+@layer base {
+  @font-face {
+    src: url("/assets/fonts/Avenir-Light.ttf");
+    font-family: "Avenir";
+    font-weight: 300;
+  }
+  @font-face {
+    src: url("/assets/fonts/Avenir-Medium.ttf");
+    font-family: "Avenir";
+    font-weight: 500;
+  }
+  @font-face {
+    src: url("/assets/fonts/Avenir-Heavy.ttf");
+    font-family: "Avenir";
+    font-weight: 700;
+  }
+  @font-face {
+    src: url("/assets/fonts/avenir-next-bold.ttf");
+    font-family: "Avenir";
+    font-weight: 800;
+  }
 }
 
 * {
@@ -17,6 +32,12 @@
   font-family: Avenir;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 button {
-  @apply border-2 border-primary text-primary;
+  @apply border border-primary text-primary font-bold;
 }
