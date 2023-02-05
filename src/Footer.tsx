@@ -7,7 +7,7 @@ const Footer = () => {
           We're ready to help with any questions you may have about our
           Bootcamps and Mentor Support.
         </p>
-        <div className="space-y-4">
+        <div className="space-y-4 lg:flex lg:space-x-4 lg:space-y-0">
           <button className="px-5 py-2 rounded-md block">Book a call</button>
           <button className="px-5 py-2 rounded-md">Join an info session</button>
         </div>

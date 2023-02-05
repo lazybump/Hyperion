@@ -33,7 +33,7 @@ const MainContent = () => {
   const totalCompletedTopics = topics.filter((topic) => topic.isActive).length;
 
   return (
-    <main className="bg-white m-4 p-8 rounded-md">
+    <main className="bg-white m-4 p-8 rounded-md max-w-4xl lg:col-span-2">
       <section className="grid grid-cols-3 grid-rows-2 items-center">
         <img
           src="/assets/images/beginner-php-fundamentals.png"
@@ -43,7 +43,6 @@ const MainContent = () => {
         <a
           href="/"
           className="col-start-2 col-span-2 bg-primary text-white text-sm rounded-lg px-4 py-2 flex justify-around border border-primary font-bold self-end"
-          onClick={(e) => e.preventDefault()}
         >
           <span>Continue your trial</span>
           <span>&gt;</span>
@@ -51,8 +50,8 @@ const MainContent = () => {
       </section>
       <section className="border-t mt-8 pt-8">
         <h2 className="text-center mb-6 text-base">
-          Your progress{" "}
-          <span className="font-medium">
+          Your progress
+          <span className="font-medium ml-1">
             ({totalCompletedTopics}/4 complete)
           </span>
         </h2>
