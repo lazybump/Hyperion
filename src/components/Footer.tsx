@@ -3,7 +3,7 @@ const Footer = () => {
     <div>
       <div className="p-10 border-y">
         <h2 className="mb-6">Get more information</h2>
-        <p className="mb-5">
+        <p className="mb-5 lg:w-96">
           We're ready to help with any questions you may have about our
           Bootcamps and Mentor Support.
         </p>

@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="lg:h-screen lg:px-48 lg:grid grid-cols-3 grid-rows-2 gap-2">
+      <div className="lg:px-48 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-2 lg:mt-20">
         <MainContent />
         <Bootcamps />
         <div className="col-start-3 row-start-1 row-span-2">

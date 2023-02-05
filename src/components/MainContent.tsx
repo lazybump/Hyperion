@@ -33,29 +33,31 @@ const MainContent = () => {
   const totalCompletedTopics = topics.filter((topic) => topic.isActive).length;
 
   return (
-    <main className="bg-white m-4 p-8 rounded-md max-w-4xl lg:col-span-2">
-      <section className="grid grid-cols-3 grid-rows-2 items-center">
+    <main className="bg-white m-4 p-8 lg:px-20 lg:py-14 rounded-md max-w-4xl lg:col-span-2">
+      <section className="grid grid-cols-3 grid-rows-2 items-center lg:items-stretch lg:justify-items-start">
         <img
           src="/assets/images/beginner-php-fundamentals.png"
-          className="h-12"
+          className="h-12 lg:row-span-2 lg:h-auto"
         />
-        <h1 className="col-span-2 text-xl">Web Development Bootcamp Trial</h1>
+        <h1 className="col-span-2 text-xl lg:text-2xl">
+          Web Development Bootcamp Trial
+        </h1>
         <a
           href="/"
-          className="col-start-2 col-span-2 bg-primary text-white text-sm rounded-lg px-4 py-2 flex justify-around border border-primary font-bold self-end"
+          className="bg-primary text-white text-sm rounded-lg px-4 py-2 col-start-2 col-span-2 flex justify-around border border-primary font-bold self-end lg:col-span-1 lg:px-8 lg:text-base lg:space-x-2"
         >
           <span>Continue your trial</span>
           <span>&gt;</span>
         </a>
       </section>
-      <section className="border-t mt-8 pt-8">
-        <h2 className="text-center mb-6 text-base">
+      <section className="border-t mt-8 lg:mt-16 pt-8">
+        <h2 className="text-center lg:text-left mb-6 text-base lg:text-lg">
           Your progress
           <span className="font-medium ml-1">
             ({totalCompletedTopics}/4 complete)
           </span>
         </h2>
-        <div className="flex flex-col space-y-3">
+        <div className="flex flex-col space-y-3 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
           {topics.map((topic) => (
             <TopicButton key={topic.id} {...topic} handleClick={toggleColor} />
           ))}
